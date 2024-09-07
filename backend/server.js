@@ -26,7 +26,7 @@ app.post('/submit' , (req,res)=>{
     const mailOptions={
         from : email ,
         to : process.env.EMAIL_USER , 
-        subject :"New Contact Form Submissino" , 
+        subject :"New Contact Form Submission" , 
         text : `Name: ${name}\nEmail: ${email}\n Message: ${message}`,
     }
 
