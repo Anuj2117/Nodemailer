@@ -15,7 +15,7 @@ function Contact() {
         setStatus("Sending.....");
 
        try{
-        const response=await fetch('http://localhost:6969/submit' ,{
+        const response=await fetch('https://nodemailer-18jh.onrender.com/submit' ,{
             method:"POST" ,
             headers:{"content-Type": "application/json"},
             body:JSON.stringify(formData)
