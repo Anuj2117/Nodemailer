@@ -10,7 +10,7 @@ const port=8000;
 
 app.use(cors());
 // app.use(bodyParser.json());
-app.express.json();
+app.use(express.json());
 
 const transporter=nodemailer.createTransport({
     service:"gmail",
